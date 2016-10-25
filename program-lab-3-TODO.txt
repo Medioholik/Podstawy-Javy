@@ -1,0 +1,39 @@
+BANK
+-transaction: check, deposit, wire 
+	-> check:
+		- From account
+		- amount
+		- date 
+		- description
+		- number per bank account (100,101,...) 
+	-> deposit:
+		- from account
+		- amount
+		- date
+		- description
+		- number per bank account (10000,10001)
+	-> wire-out
+		- country 
+		- swift
+		- to account
+		- date
+		- description
+		- number per client(1,2,3...) 
+-bank accounts 
+	-> (15 numeric)
+	-> depscription
+
+akcje
+-> add new account
+-> do transaction
+-> list history per account
+-> przy ka¿dej transakacji ma byæ zawarta informacja o 
+	- bank name
+	- client name
+
+*Kozystac tylko z log4j.
+
+*UWAGI
+interaface, klasa abstrakcyjna, klasa
+pamietaj o clean codingu
+kod ma byc tak napisany zeby latwo sie dodawalo nowe transakcje
